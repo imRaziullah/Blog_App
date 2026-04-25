@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Dev<span>Blog</span></a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Stories, Ideas &amp; Insights</h1>
+      <p class="hero__subtitle">Exploring technology, travel, and the art of writing clean code. Welcome to my corner of the internet.</p>
+    </div>
+  </section>
+
+  <!-- Search & Filters -->
+  <section class="controls">
+    <div class="controls__inner">
+      <div class="search-box">
+        <span class="search-box__icon">&#128269;</span>
+        <input
+          type="text"
+          class="search-box__input"
+          id="searchInput"
+          placeholder="Search blog posts..."
+          autocomplete="off"
+        >
+      </div>
+      <div class="filter-buttons" id="filterButtons">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <main class="blog-section page-enter">
+    <div class="blog-section__header">
+      <h2 class="blog-section__title">Latest Posts</h2>
+      <span class="blog-section__count" id="postCount"></span>
+    </div>
+    <div class="blog-grid" id="blogGrid">
+      <!-- Rendered by JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <div class="footer__brand">Dev<span>Blog</span></div>
+        <p class="footer__desc">A personal blog about technology, travel, and coding. Sharing what I learn, one post at a time.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Categories</h4>
+        <div class="footer__links">
+          <a href="#" data-category="Tech">Tech</a>
+          <a href="#" data-category="Travel">Travel</a>
+          <a href="#" data-category="Coding">Coding</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 DevBlog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

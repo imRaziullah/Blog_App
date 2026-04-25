@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Dev<span>Blog</span></a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contact Content -->
+  <main class="contact page-enter">
+    <div class="contact__header">
+      <h1 class="contact__title">Get In Touch</h1>
+      <p class="contact__subtitle">Have a question or want to work together? Drop me a message!</p>
+    </div>
+
+    <div class="contact__grid">
+      <!-- Info Cards -->
+      <div class="contact__info">
+        <div class="contact__info-card">
+          <div class="contact__info-icon">&#9993;&#65039;</div>
+          <div>
+            <div class="contact__info-label">Email</div>
+            <div class="contact__info-value">raziullah@example.com</div>
+          </div>
+        </div>
+        <div class="contact__info-card">
+          <div class="contact__info-icon">&#128205;</div>
+          <div>
+            <div class="contact__info-label">Location</div>
+            <div class="contact__info-value">India</div>
+          </div>
+        </div>
+        <div class="contact__info-card">
+          <div class="contact__info-icon">&#128187;</div>
+          <div>
+            <div class="contact__info-label">Freelance</div>
+            <div class="contact__info-value">Available for projects</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact__form-wrapper">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-group__label" for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-group__input"
+              placeholder="Enter your name"
+              autocomplete="name"
+            >
+            <span class="form-group__error" id="nameError">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-group__label" for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-group__input"
+              placeholder="Enter your email"
+              autocomplete="email"
+            >
+            <span class="form-group__error" id="emailError">Please enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-group__label" for="message">Message</label>
+            <textarea
+              id="message"
+              class="form-group__textarea"
+              placeholder="Write your message..."
+            ></textarea>
+            <span class="form-group__error" id="messageError">Please enter your message.</span>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="form-success__icon">&#9989;</div>
+          <h3 class="form-success__title">Message Sent!</h3>
+          <p class="form-success__message">Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <div class="footer__brand">Dev<span>Blog</span></div>
+        <p class="footer__desc">A personal blog about technology, travel, and coding. Sharing what I learn, one post at a time.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Categories</h4>
+        <div class="footer__links">
+          <a href="index.html">Tech</a>
+          <a href="index.html">Travel</a>
+          <a href="index.html">Coding</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 DevBlog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
